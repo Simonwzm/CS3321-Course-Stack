@@ -1,3 +1,9 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/Simonwzm/CS3321-Webapp-Frontend
+[submodule "neo4j-backend"]
+	path = neo4j-backend
+	url = https://github.com/Learner209/neo4j-courses/
+[submodule "mongodb-backend"]
+	path = mongodb-backend
+	url = https://github.com/UnderOC/CS3321-Course-Database
