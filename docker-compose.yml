@@ -7,6 +7,10 @@ services:
     volumes:
       - ./frontend/:/app
     network_mode: service:db
+    depends_on:
+      - db
+      - mongo-backend
+      - neo4j-backend
 
   mongo-backend:
     build:
