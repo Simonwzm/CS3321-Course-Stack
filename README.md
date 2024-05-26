@@ -1,6 +1,12 @@
 # Course-Stack
 
-这是 CS3321 数据库技术课程的小组作业仓库。我们设计了一个课程信息查询和可视化的数据库网络应用，名称是 Course-Stack
+> 这是 CS3321 数据库技术课程的小组作业仓库。我们设计了一个课程信息查询和可视化的数据库网络应用，名称是 Course-Stack
+
+ <p align="center">
+<a href="https://sm.ms/image/D5Mrkx2NJZztaSO" target="_blank"><img src="https://s2.loli.net/2024/05/26/D5Mrkx2NJZztaSO.png" ></a>
+</p>
+
+[在线演示地址](http://localhost:5173/SearchPage)
 
 [添加小组成员介绍]
 
