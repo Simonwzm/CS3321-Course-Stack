@@ -38,6 +38,12 @@ jobs:
   
       # - name: Set up Docker Compose
       #   run: sudo apt-get install docker-compose -y
+      - name: List directory contents
+        run: |
+          ls -la
+          ls -la frontend
+          ls -la mongodb-backend
+          ls -la neo4j-backend
   
       - name: Build services
         run: docker-compose build
