@@ -28,6 +28,9 @@ services:
       context: ./neo4j-backend
       dockerfile: Dockerfile
     network_mode: service:db
+    depends_on:
+      - db
+      - mongo-backend
 
   db:
     image: mongo:latest
