@@ -52,4 +52,18 @@ jobs:
         run: docker-compose build
   
       - name: Run services
-        run: docker-compose up  --abort-on-container-exit
+        run: docker-compose up -d
+  
+      - name: Check container statuses
+        run: |
+          if [ $(docker-compose ps -q | wc -l) -eq 0 ]; then
+            echo "No containers found, exiting with failure."
+            exit 1
+          fi
+          for container in $(docker-compose ps -q); do
+            if [ "$(docker inspect -f '{{.State.Status}}' $container)" != "running" ]; then
+              echo "Container $container is not running."
+              docker-compose logs $container
+              exit 1
+            fi
+          done
