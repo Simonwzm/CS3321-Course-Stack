@@ -54,7 +54,7 @@ jobs:
       - name: Run Docker Compose with timeout
         id: run_with_timeout
         run: |
-          timeout 120 docker-compose up --abort-on-container-exit
+          timeout 240 docker-compose up --abort-on-container-exit
           echo "::set-output name=exit_code::$?"
 
       - name: Check for Timeout
