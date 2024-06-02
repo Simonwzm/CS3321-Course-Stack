@@ -40,7 +40,7 @@ services:
     ports:
       - "27017:27017" # Expose DB port
       - "5173:5173"   # Expose vue-app port
-      - "3001:3001"   # Expose mongo-backend port
+      - "3000:3000"   # Expose mongo-backend port
       - "8080:8000"   # Expose neo4j-backend port for debugging
 
     environment:
